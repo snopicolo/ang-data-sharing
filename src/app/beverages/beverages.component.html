@@ -1,0 +1,10 @@
+<div class="child">
+
+    <h2>Child Component</h2>
+    <p>Todays beverage is <strong>{{beverages}}</strong></p>
+
+    <label for="beverage-input">Add A Beverage: </label>
+    <input type="text" id="beverage-input" #newBeverage>
+
+    <button (click)="addNewBeverage(newBeverage.value)">ADD </button>
+</div>
